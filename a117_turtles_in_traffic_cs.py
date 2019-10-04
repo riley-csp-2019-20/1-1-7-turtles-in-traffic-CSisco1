@@ -42,13 +42,13 @@ while steps < 50:
     for h_turtle in horiz_turtles:
         for v_turtle in vert_turtles:
 
-            h_turtle.forward(10)
-            v_turtle.forward(10)
+            h_turtle.forward(5)
+            v_turtle.forward(5)
 
             x1 = h_turtle.xcor()
-            x2 = v_turtle_xcor()
+            x2 = v_turtle.xcor()
             y1 = h_turtle.ycor()
-            y2 = v_turtle_ycor()
+            y2 = v_turtle.ycor()
 
             if abs(x1-x2) < 20 and abs(y1 - y2) <20:
                 h_turtle.fillcolor("gray")
